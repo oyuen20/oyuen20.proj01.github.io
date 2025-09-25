@@ -1,0 +1,188 @@
+*{
+    font-family: Helvetica;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(/Assets/Raleway-VariableFont_wght.ttf);
+}
+body{
+    background: linear-gradient(315deg, #8bbefc 28%,  #8858ef 68%, #321188 98%);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.gif{
+    display: block;
+    margin: 0 auto;
+}
+
+a:visited{
+    color: whitesmoke;
+}
+
+.home{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.feed{
+    height: 120vh;
+    position: relative;
+}
+
+.link{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    z-index: 10;
+    cursor: pointer;
+    padding-top: 10px;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 0px #2a1177 solid;
+    border-radius: 100px;
+    transition: opacity 0.5s ease, transform 0.2s ease;
+}
+
+.link:hover{
+    transform: scale(1.25);
+}
+
+.heading{
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    scrollbar-width: none;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1, h3{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.type{
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    width: 20ch;
+    margin: 0 auto;
+    animation: typing 2s steps(20, end) forwards;
+}
+
+@keyframes typing {
+    from{width: 0}
+    to{width: 16ch}
+}
+
+.images{
+    position: relative;
+    z-index: 2;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+figcaption{
+    cursor: pointer;
+    padding-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease, transform 0.2s ease;
+}
+
+figure{
+    position: relative;
+}
+
+figcaption{
+    position: absolute;
+}
+
+.text{
+    position: relative;
+}
+
+.text figcaption{
+    position: absolute;
+    inset: 0;
+    text-align: center;
+}
+
+.click{
+    display: none;
+}
+
+.title{
+    opacity: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 30px;
+}
+
+.desc{
+    margin-top: 50px;
+    background-color: #d1a8ff;
+    box-shadow: 0px 0px 7px 5px #a5abf0;
+    padding: 10px 20px;
+    height: 150px;
+    overflow: scroll;
+    scrollbar-width: none;
+    opacity: 0;
+}
+
+.click:checked + label .title{
+    opacity: 0;
+}
+
+.click:checked + label .desc{
+    opacity: 1;
+}
+
+.entry, video{
+    display: inline;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.imghover:hover, .text:hover figcaption{
+    transform: scale(1.25);
+}
+
