@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: Helvetica;
-    src: url(/Assets/Raleway-VariableFont_wght.ttf);
+    src: url(Assets/Raleway-VariableFont_wght.ttf);
 }
 body{
     background: linear-gradient(315deg, #8bbefc 28%,  #8858ef 68%, #321188 98%);
